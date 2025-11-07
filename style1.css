@@ -1,0 +1,16 @@
+body {
+    background-color: #232B2B; /* Charleston Green */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+#payment-qr {
+    width: 200px;
+    height: 200px;
+}

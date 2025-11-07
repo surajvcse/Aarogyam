@@ -1,0 +1,1440 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --main-color: #f54744;
+  --text-color: #2f2f2f;
+  --bg-color: #fff;
+
+  --big-font: 3.2rem;
+  --h2-font: 2rem;
+}
+
+section {
+  padding: 50px 10%;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /*  */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+header .website-name {
+  margin-left: 10px; /* Adjust spacing as needed */
+  font-size: 18px;   /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+  color: #fd1d1d;       /* Adjust text color as needed */
+  
+}
+
+header .navbar {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .navbar li {
+  margin-left: 15px;
+}
+
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 900;
+}
+.navbar a:hover {
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 2rem;
+}
+#menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background: #fff4f3;
+  gap: 1.5rem;
+  
+}
+/*  */
+.home-text {
+  flex: 1;
+  padding: 20px;
+}
+/*  */
+.home-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+/*  */
+.home-text .headP {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+/*  */
+.home-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/*  */
+
+.home-img img {
+  width: 65%;
+  border-radius: 1.4rem;
+  margin-top: 50px;
+  
+}
+
+
+.home-text h3 {
+  color: #fd1d1d;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+  width: 250px;
+  border-radius: 1rem;
+  background: #ffebe6;
+  text-align: center;
+  
+}
+.home-text h1 {
+  font-size: var(--big-font);
+}
+.home-text span {
+  color: var(--main-color);
+}
+.home-text p {
+  max-width: 80%;
+  margin: 1rem 0 1.1rem;
+}
+.btn {
+  background: var(--main-color);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  color: #fff;
+}
+/* patment button */
+.payment-button {
+  background: var(--main-color);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fc5552;
+}
+/* payment button */
+.payment-button:hover {
+  background: #fc5552;
+}
+.heading {
+  text-align: center;
+}
+.heading p {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.heading h2 {
+  font-size: var(--h2-font);
+}
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+#imgAnime {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  
+
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.box img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.box h2 {
+  font-size: 1.2rem;
+  margin: 1.7rem 0 1rem;
+}
+.DOCTORSANDSTAFF .DOCTORSANDSTAFF-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.DOCTORSANDSTAFF .DOCTORSANDSTAFF-container .DOCTORSANDSTAFF-box {
+  position: relative;
+  height: 420px;
+  flex: 1 1 18rem;
+  overflow: hidden;
+}
+.DOCTORSANDSTAFF .DOCTORSANDSTAFF-container .DOCTORSANDSTAFF-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.DOCTORSANDSTAFF .DOCTORSANDSTAFF-container .DOCTORSANDSTAFF-box .text {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  padding-top: 8rem;
+  background: rgba(255, 244, 243, 0.78);
+  transition: 0.5s;
+}
+.DOCTORSANDSTAFF .DOCTORSANDSTAFF-container .DOCTORSANDSTAFF-box:hover .text {
+  top: 0;
+}
+.DOCTORSANDSTAFF-box .text h2 {
+  font-size: 1.2rem;
+}
+.DOCTORSANDSTAFF-box .text p {
+  margin: 0.4rem 0 1rem;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input,
+textarea {
+  width: 400px;
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  background: #e6f0ff;
+}
+.contact-form form textarea {
+  resize: none;
+  height: 200px;
+}
+.contact-form form .contact-button {
+  font-weight: 500;
+  color: #fff;
+  background: var(--main-color);
+  cursor: pointer;
+}
+.contact-form form .contact-button:hover {
+  background: #fc5552;
+}
+.copyright {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background: #24262b;
+}
+/* Making Responsive */
+@media (max-width: 991px) {
+  header {
+    padding: 10px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+  :root {
+    --big-font: 2.7rem;
+    --h2-font: 1.7rem;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --big-font: 2rem;
+    --h2-font: 1.4rem;
+  }
+  #menu-icon {
+    display: initial;
+    color: var(--text-color);
+  }
+  header .navbar {
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #fff4f3;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+    transition: 0.5s;
+  }
+  .navbar.active {
+    top: 100%;
+  }
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+  }
+  .navbar a:hover {
+    color: var(--main-color);
+    background: none;
+  }
+  .home {
+    grid-template-columns: 1fr;
+  }
+  .home-text {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 415px) {
+  .contact-form form input,
+  textarea {
+    width: auto;
+  }
+}
+
+
+
+/* Footer */
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+/*  Packages section   */
+
+.services {
+  padding: 20px;
+  background-color: #f8f8f8;
+  
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  height: 55px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#fullBodyBox{
+  height: 450px;
+}
+
+/* full body checkup css */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.packageName {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/*  */
+.box {
+  flex: 1 1 calc(25.333% - 20px); /* Adjust width as needed */
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.packageName {
+  font-size: 1.5em;
+  margin: 10px 0;
+  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: auto; /* Ensures the button stays at the bottom */
+}
+/* payment button  */
+.payment-button {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: auto; /* Ensures the button stays at the bottom */
+}
+@media (max-width: 768px) {
+  .box {
+      flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+      flex: 1 1 100%; /* Full width for very small screens */
+  }
+}
+
+/* Why us section */
+
+.Whyus {
+  padding: 20px;
+  background-color: #f8f8f8;
+  
+}
+
+.headingWhyus {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Whyus-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.packageName {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: auto; /* Ensures the button stays at the bottom */
+}
+
+/* Payment button  */
+.payment-button {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: auto; /* Ensures the button stays at the bottom */
+}
+
+@media (max-width: 768px) {
+  .box {
+      flex: 1 1 calc(50% - 20px); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+      flex: 1 1 100%; /* Full width for very small screens */
+  }
+}
+
+
+/* home section */
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  min-height: 100vh; /* Ensures the section takes at least the full viewport height */
+}
+
+
+.home-text {
+  flex: 1;
+  padding: 20px; 
+} 
+
+.home-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .home {
+      flex-direction: column;
+  }
+
+  .home-text, .home-img {
+      flex: none;
+      padding: 10px;
+  }
+
+  .home-text h2 {
+      font-size: 2em;
+  }
+
+  .home-text h3 {
+      font-size: 1.2em;
+  }
+}
+
+
+/* Header Animation*/
+/* Typing animation */
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 90%;
+  }
+  90% {
+    width: 48%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Blink animation for the cursor */
+@keyframes blink {
+  0%, 50%, 70% {
+    border-color: transpa rent;
+  }
+  25%, 70% {
+    border-color: #fc5552;
+  }
+}
+
+.home-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border-right: 4px solid #fc5552;
+  overflow: hidden;
+  width: 250px;
+  animation: typing 9s steps(40, end) infinite, blink 2s step-end infinite;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .home-text h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-text h3 {
+    font-size: 1.1rem;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .home-text h3 {
+    font-size: 1rem;
+    animation: typing 10s steps(40, end) infinite, blink 1s step-end infinite;
+    
+  }
+}
+
+@media (max-width: 576px) {
+  .home-text h3 {
+    font-size: 1rem;
+    animation: typing 10s steps(40, end) infinite, blink 1s step-end infinite;
+    
+  }
+}
+
+
+
+/* main image animation */
+
+/* Keyframes for a smooth, subtle, and professional floating animation */
+@keyframes imageAlive {
+  0% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.02) rotate(0.5deg) translate(5px, -5px);
+  }
+  50% {
+    transform: scale(1.03) rotate(0deg) translate(-5px, 5px);
+  }
+  75% {
+    transform: scale(1.02) rotate(-0.5deg) translate(5px, -5px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+  }
+}
+
+/* Apply animation to the image */
+.home-img img {
+  animation: imageAlive 10s infinite ease-in-out;
+}
+
+
+/* making button alive */
+
+/* Keyframes for the button animation */
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+    background-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: #0056b3;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    background-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+}
+
+/* Apply animation to the button */
+.home .btn {
+  animation: buttonPulse 2s infinite ease-in-out;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+
+/* making available tests boxes effect */
+
+/* Box container style */
+.services .box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the box */
+.services .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the images and text are centered and responsive */
+.services .box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.services .box .packageName {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.services .box .btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Payment button */
+.services .box .payment-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* making why us effect */
+/* Box container style */
+.Whyus .box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the box */
+.Whyus .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the images and text are centered and responsive */
+.Whyus .box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.Whyus .box .packageName {
+  margin: 15px 0;
+  text-align: center;
+}
+
+
+/* making buttons adjustment */
+/* Set a default margin for buttons */
+.home-text .btn {
+  margin-right: 10px; /* Adjust as needed */
+}
+
+/* Add a margin to the right of the last button */
+.home-text .btn:last-child {
+  margin-right: 0; /* Remove margin from the last button */
+}
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .home-text {
+      text-align: center; /* Center-align the content */
+  }
+
+  .home-text .btn {
+      display: block; /* Display buttons as block elements */
+      margin: 10px auto; /* Center the buttons and add vertical spacing */
+  }
+}
+
+/* whats app */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.whatsapp-icon img {
+  width: 60px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; /* Make it circular */
+}
+
+/* making whatsapp live */
+/* Add default styles for the WhatsApp icon */
+.whatsapp-icon img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  transition: transform 0.2s; /* Add transition for smooth animation */
+}
+
+/* Apply animation on hover */
+.whatsapp-icon img:hover {
+  transform: scale(1.1); /* Scale up the icon on hover */
+}
+
+
+
+/* Testimonial */
+
+
+
+.containerRW{
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  background-color: #f5f5f5;
+}
+.containerRW .contents-wraper{
+  width: 90%;
+  min-height: inherit;
+  margin: 30px auto;
+  text-align: center;
+}
+.contents-wraper .header h1{
+  position: relative;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.contents-wraper .header h1::before{
+  content: '';
+  width: 200px;
+  height: 2px;
+  background-color: #287331;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.contents-wraper .testRow{
+  width: 100%;
+  min-height: inherit;
+  position: relative;
+  overflow: hidden;
+}
+.testRow .testItem{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testRow .testItem:not(.active){
+  top: 0;
+  left: -100%;
+}
+.testRow .testItem img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  outline: 2px solid #006994;
+  outline-offset: 2px;
+}
+.testRow .testItem h3{
+  font-size: 30px;
+  font-style: italic;
+  padding: 7px;
+}
+.testRow .testItem h4{
+  font-style: italic;
+}
+.testRow .testItem p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 10px;
+}
+.contents-wraper .indicators{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  cursor: pointer;
+}
+.contents-wraper .indicators .dot{
+  width: 15px;
+  height: 15px;
+  margin: 0px 3px;
+  border: 3px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+.contents-wraper .indicators .active{
+  background-color: #006994;
+}
+@keyframes next1{
+  from{
+    left: 0%;
+  }
+  to{
+    left: -100%;
+  }
+}
+@keyframes next2{
+  from{
+    left: 100%;
+  }
+  to{
+    left: 0%;
+  }
+}
+
+@keyframes prev1{
+  from{
+    left: 0%;
+  }
+  to{
+    left: 100%;
+  }
+}
+@keyframes prev2{
+  from{
+    left: -100%;
+  }
+  to{
+    left: 0%;
+  }
+}
+
+@media(max-width: 550px){
+  .containerRW .contents-wraper{
+    width: 90%;
+  }
+  .contents-wraper .header h1{
+    font-size: 32px;
+  }
+  .testRow .testItem h3{
+    font-size: 26px;
+  }
+  .testRow .testItem p{
+    font-size: 16px;
+    letter-spacing: initial;
+    line-height: initial;
+  }
+
+}
+
+
+
+/* rate list css */
+
+
+table {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  margin-top: 110px;
+  
+}
+
+.header {
+  background-color: #004aad;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.sub-header {
+  background-color: #d9e8ff;
+  color: #004aad;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px 0;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+a.book-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #28a745;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+a.book-link:hover {
+  background-color: #218838;
+}
+
+/* additiom */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carousel-item {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  transition: 0.6s ease;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+
+/* Payment integration css */
+
+
+
+button {
+  margin-top: 20px;
+}
+
+#payment-qr {
+  width: 200px;
+  height: 200px;
+}
+
+
+/* full body img animation */
+
+/* Keyframes for a smooth, subtle, and professional floating animation */
+@keyframes imageAlive {
+  0% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.02) rotate(0.5deg) translate(5px, -5px);
+  }
+  50% {
+    transform: scale(1.03) rotate(0deg) translate(-5px, 5px);
+  }
+  75% {
+    transform: scale(1.02) rotate(-0.5deg) translate(5px, -5px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+  }
+}
+
+/* Apply animation to the image */
+.image-container {
+  animation: imageAlive 10s infinite ease-in-out;
+}
+
+/* test */
+/* Keyframes for a smooth, subtle, and professional floating animation */
+@keyframes imageAlive {
+  0% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.02) rotate(0.5deg) translate(5px, -5px);
+  }
+  50% {
+    transform: scale(1.03) rotate(0deg) translate(-5px, 5px);
+  }
+  75% {
+    transform: scale(1.02) rotate(-0.5deg) translate(5px, -5px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translate(0, 0);
+  }
+}
+
+/* Apply animation to the image */
+#imgAnime {
+  animation: imageAlive 10s infinite ease-in-out;
+}
+.imghead {
+  margin: 0;
+  padding: 20px; /* Equal padding on all sides */
+  background-color: #ffebe6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container h2 {
+  margin-bottom: 20px;
+}
+
+.img-container img {
+  max-width: 93%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
+
+  .button-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-us {
+    background-color: #ff6347; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    padding: 20px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px; /* Set a specific width */
+    transition: background-color 0.3s ease;
+}
+
+.contact-us:hover {
+    background-color: #ff4500; /* Hover color */
+}
+
+
+/* ............... */
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 35px;
+  color: gold;
+  margin: 0 2px;
+}
+
+
+
+
+
+/*  */
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.rating-number {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* doctor and staff section */
+/* General styles for the section */
+.DOCTORSANDSTAFF {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading p {
+  font-size: 19px;
+  color: #e83535;
+  margin: 0;
+}
+
+.heading h2 {
+  font-size: 27px;
+  color: #000000;
+  margin: 10px 0 0;
+}
+
+/* Container for doctor info */
+.DOCTORSANDSTAFF-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.About {
+  text-align: center;
+}
+
+/* Style for individual doctor box */
+.DOCTORSANDSTAFF-box {
+  flex: 1;
+  max-width: 350px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.DOCTORSANDSTAFF-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text {
+  padding: 15px;
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.text p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the additional information box */
+.DOCTORSANDSTAFF-box:nth-of-type(2) {
+  flex: 2;
+  max-width: 600px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.DOCTORSANDSTAFF-box:nth-of-type(2) h2 {
+  font-size: 28px;
+  color: #ff6347;
+  margin-bottom: 15px;
+}
+
+.DOCTORSANDSTAFF-box:nth-of-type(2) p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/*  */
+.DOCTORSANDSTAFF-box img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* You can adjust the values as needed */
+  transition: box-shadow 0.3s ease-in-out; /* Optional: adds a smooth transition effect */
+}
+
+.DOCTORSANDSTAFF-box img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Optional: increases shadow on hover */
+}

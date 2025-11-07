@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking Form</title>
+    <link rel="stylesheet" href="ABForm.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Appointment Booking Form</h2>
+        <form id="bookingForm" method="post" name="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="time-slot">Time Slot:</label>
+                <input type="datetime-local" id="time-slot" name="timeSlot" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="button-group">
+                <button type="submit">Book Now</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxQPk9-GqsGhs9h5t9vnGQXNMbYfY0vPPC89iuUydIvhQuFEM7L0GQBbXHfJq83k8CBgA/exec';
+        const form = document.forms['contact-form'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you! Your form has been submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link rel="stylesheet" href="BookingForm.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Booking Form</h2>
+        <form id="bookingForm" method="post" name="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <div class="button-group">
+                <button type="submit">Book Now</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+            
+        </form>
+    </div>
+    <!-- excel -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbylHfAs2-s9MSTshgJJQ_rANFmRvEGFhPxf9h6wosBkA_U0NQg2A9V5wDwo-bFBzTtE/exec';
+        const form = document.forms['contact-form'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you! Your form has been submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+
+    <!-- For Razorpay Integration -->
+    <!-- <script>
+        document.getElementById('rzp-button1').onclick = function(e){
+            var amount = document.getElementById('amount').value;
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var contact = document.getElementById('contact').value;
+
+            if (!amount || amount < 1) {
+                alert('Please enter a valid amount');
+                return;
+            }
+            if (!name || !email || !contact) {
+                alert('Please fill in all the details');
+                return;
+            }
+
+            var options = {
+                "key": "YOUR_RAZORPAY_KEY_ID", // Enter the Key ID generated from the Dashboard
+                "amount": amount * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise or INR 500.
+                "currency": "INR",
+                "name": "Acme Corp",
+                "description": "Test Transaction",
+                "image": "https://example.com/your_logo",
+                "handler": function (response){
+                    alert("Payment ID: " + response.razorpay_payment_id);
+                    alert("Order ID: " + response.razorpay_order_id);
+                    alert("Signature: " + response.razorpay_signature);
+                    // You can handle the response and pass it to your backend for verification
+                },
+                "prefill": {
+                    "name": name,
+                    "email": email,
+                    "contact": contact
+                },
+                "notes": {
+                    "address": "Razorpay Corporate Office"
+                },
+                "theme": {
+                    "color": "#F37254"
+                }
+            };
+
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+            e.preventDefault();
+        }
+    </script> -->
+</body>
+</html>
